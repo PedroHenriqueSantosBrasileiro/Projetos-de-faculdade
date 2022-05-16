@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Principal {
 
     public static void main(String[] args) {
-        
+
         Scanner tc = new Scanner(System.in);
         Inss inss = new Inss();
         ValeTransporte valeTransporte = new ValeTransporte();
@@ -15,10 +15,10 @@ public class Principal {
         ValeRefeição valeRefeição = new ValeRefeição();
         ValeAlimentação valeAlimentação = new ValeAlimentação();
         Convenio convenio = new Convenio();
-        
+
         double salarioBruto, salarioLiquido, salarioBrutoMenosInss;
         String nome;
-        
+
         System.out.println("Insira o nome do funcionário: ");
         nome = tc.nextLine();
 
@@ -35,7 +35,7 @@ public class Principal {
         System.out.printf("Vr = %.2f%n", valeRefeição.CalculoDescontoValeRefeição(salarioBruto));
         System.out.printf("VA = %.2f%n", valeAlimentação.CalculoValeAlimentação(salarioBruto));
         System.out.printf("Convenio = %.2f%n", convenio.CalculoDescontoConvenio(salarioBruto));
-        
+
     }
 
 }
