@@ -2,19 +2,19 @@ package beneficios;
 
 public class Convenio {
 
-    int TaxaConvenio = 2;
-    double SalarioMinimo = 1212;
-    double DescontoConvenio;
+    final byte TAXA_CONVENIO = 2;
+    final double salarioMinimo = 1212;
+    double descontoConvenio;
 
     public double CalculoDescontoConvenio(double x) {
 
-        if (x <= SalarioMinimo) {
-            DescontoConvenio = 0;
+        if (x <= salarioMinimo) {
+            descontoConvenio = 0;
         } else {
-            DescontoConvenio = (x * (double) TaxaConvenio) / 100;
+            descontoConvenio = (x * (double) TAXA_CONVENIO) / 100;
 
         }
-        return DescontoConvenio;
+        return descontoConvenio;
 
     }
 
