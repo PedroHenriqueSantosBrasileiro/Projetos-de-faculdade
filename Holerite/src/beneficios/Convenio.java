@@ -2,7 +2,7 @@ package beneficios;
 
 public class Convenio {
 
-    final byte TAXA_CONVENIO = 2;
+    final byte TAXA_CONVENIO = 4;
     final double salarioMinimo = 1212;
     double descontoConvenio;
 
