@@ -21,15 +21,23 @@ public class Principal {
         String nome;
         char resposta[] = new char[6];
 
-        do {
+        while (resposta[5] != 'n' || resposta[5] != 'N'){
+            
+            if ((resposta[5] == 'n') || (resposta[5] == 'N')) {
+                break;
+            
+        }
 
             System.out.println("GERADOR DE HOLERITE");
-            System.out.println("Digite 1 para continuar e 2 para sair");
+            System.out.printf("[1] para continuar %n[2] para sair%n");
             resposta[0] = tc.next().charAt(0);
             if (resposta[0] == '2') {
                 break;
             }
-
+            
+            do {
+                
+            
             System.out.println("Insira o nome do funcionário: ");
             nome = tc.next();
 
@@ -88,10 +96,14 @@ public class Principal {
 
             System.out.println("Deseja fazer o Holerite de outro Funcionario? (S/N)");
             resposta[5] = tc.next().charAt(0);
-            if ((resposta[5] == 'n') || (resposta[5] == 'N')) {
+            if ((resposta[5] == 's') || (resposta[5] == 'S')) {
+                continue;
+            }else if ((resposta[5] != 's') || (resposta[5] != 'S')) {
                 break;
             }
 
         } while (resposta[5] != 'n' || resposta[5] != 'N');
+            
+            } 
     }
 }
