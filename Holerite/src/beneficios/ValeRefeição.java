@@ -17,5 +17,9 @@ public class ValeRefeição {
 
             return descontoValeRefeição;
     }
+        public double NãoOptanteValeRefeição(){
+        descontoValeRefeição = 0;
+        return descontoValeRefeição;
+        }
 
 }

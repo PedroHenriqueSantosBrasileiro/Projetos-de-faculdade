@@ -17,6 +17,10 @@ public class Convenio {
         return descontoConvenio;
 
     }
+    public double NãoOptanteConvenio() {
+      descontoConvenio = 0;
+      return descontoConvenio;
+    }
 
 }
     

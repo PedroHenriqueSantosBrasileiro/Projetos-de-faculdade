@@ -11,4 +11,11 @@ public class ValeTransporte {
         return descontoValeTransporte;
 
     }
+    
+    public double NãoOptanteValeTransporte() {
+
+        descontoValeTransporte = 0;
+        return descontoValeTransporte;
+
+    }
 }
