@@ -30,23 +30,31 @@ public class Principal {
 
             }
 
-            System.out.println("GERADOR DE HOLERITE");
-            System.out.printf("[1] para continuar %n[2] para sair%n");
-            resposta[0] = tc.next().charAt(0);
+            while ((resposta[0] != '2') && (resposta[0] != '1')) {
+
+                System.out.println("GERADOR DE HOLERITE");
+                System.out.printf("[1] para continuar %n[2] para sair%n");
+                resposta[0] = tc.next().charAt(0);
+                if (resposta[0] == '2') {
+                    break;
+                } else if (resposta[0] != '2' & resposta[0] != '1') {
+                    System.out.println("ERRO ESCOLHA UMA OPÇÃO VALIDA");
+                    continue;
+                }
+            }
             if (resposta[0] == '2') {
                 break;
             }
-
             do {
 
                 System.out.println("Insira o nome do funcionário: ");
-                nome = tc.nextLine();
+                //nome = tc.nextLine();
                 nome = tc.nextLine();
 
                 System.out.println("Insira o salário do Funcionário: ");
                 salarioBruto = tc.nextDouble();
 
-                System.out.println("Informe a Quantidade horas extras feitas: ");
+                System.out.println("Informe a quantidade horas extras feitas: ");
                 horaextra.horasExtrasFeitas = tc.nextInt();
                 horaextra.CalculoDaHora(horaextra.horasExtrasFeitas, salarioBruto);
                 horaextra.CalculoHoraExtra(salarioBruto, horaextra.valorHoraExtra);
