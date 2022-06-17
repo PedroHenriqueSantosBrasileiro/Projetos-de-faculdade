@@ -48,7 +48,7 @@ public class Principal {
             do {
 
                 System.out.println("Insira o nome do funcionário: ");
-                //nome = tc.nextLine();
+                nome = tc.nextLine();
                 nome = tc.nextLine();
 
                 System.out.println("Insira o salário do Funcionário: ");
